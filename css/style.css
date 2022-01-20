@@ -172,42 +172,119 @@ body {
 
 }
 
+.slick_arrow {
+    position: absolute;
+}
+
+.slider__star {
+    display: flex;
+}
+
 
 .sliders {
+    position: relative;
     display: flex;
     justify-content: space-around;
+    margin-left: 30px;
+    width: 95%;
+}
+
+.slick-arrow {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    z-index: 2;
+}
+
+.slider__star {
+    display: flex;
+}
+.slick-prev{
+    background: url("../img/Arrow-right.svg");
+    left: -30px;
+    top: 50%;
+}
+
+.slick-next{
+    background: url("../img/Arrow-left.svg");
+    right: 20px;
+    top: 50%;
 }
 
 
-.sliders .slider:nth-child(1) {
-    background: url("../img/img.png");
+.slider1 {
+    background: url("../img/img.png") no-repeat;
     width: 290px;
     height: 440px;
+    padding: 20px;
 }
 
-.sliders .slider:nth-child(2) {
-    background: url("../img/justice.png");
+
+.slider2 {
+    background: url("../img/justice.png") no-repeat;
     width: 290px;
     height: 440px;
+    padding: 20px;
 }
 
-.sliders .slider:nth-child(3) {
-    background: url("../img/Mortal Kombat.png");
+.slider3 {
+    background: url("../img/Mortal Kombat.png") no-repeat;
     width: 290px;
     height: 440px;
+    padding: 20px;
 }
 
-.sliders .slider:nth-child(4) {
-    background: url("../img/Courier.png");
+.slider4 {
+    background: url("../img/Courier.png") no-repeat;
     width: 290px;
     height: 440px;
+    padding: 20px;
 }
 
-.sliders .slider:nth-child(5) {
-    background: url("../img/Thunder.png");
+.slider5 {
+    background: url("../img/Thunder.png") no-repeat;
     width: 290px;
     height: 440px;
+    padding: 20px;
 }
+
+.slider6 {
+    background: url("../img/img.png") no-repeat;
+    width: 290px;
+    height: 440px;
+    padding: 20px;
+}
+
+.slider7 {
+    background: url("../img/justice.png ") no-repeat;
+    width: 290px;
+    height: 440px;
+    padding: 20px;
+}
+
+.slider8 {
+    background: url("../img/justice.png") no-repeat;
+    width: 290px;
+    height: 440px;
+    padding: 20px;
+}
+
+.slider9 {
+    background: url("../img/Mortal Kombat.png") no-repeat;
+    width: 290px;
+    height: 440px;
+    padding: 20px;
+}
+
+.slider10 {
+    background: url("../img/Courier.png") no-repeat;
+    width: 290px;
+    height: 440px;
+    padding: 20px;
+}
+
 
 .slider__p {
     margin-bottom: 20px;
@@ -247,8 +324,9 @@ body {
     font-size: 18px;
     color: #FFFFFF;
 }
-.anims:before {
-    margin-top: 20px;
+
+.animation__new:before {
+    margin-top: 22px;
     content: '';
     position: absolute;
     width: 0;
@@ -257,45 +335,94 @@ body {
     transition: .1s;
 }
 
-.anims:hover:before {
-    width: 125px;
+.animation__new:hover:before {
+
+    width: 155px;
 
 }
-
 
 
 .anims {
+    position: relative;
     display: flex;
     justify-content: space-around;
+    margin-left: 30px;
+    width: 95%;
+
+}
+.slick-arrow {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border: none;
+    position: absolute;
+    z-index: 2;
 }
 
+.slider__star {
+    display: flex;
+}
+.slick-prev{
+    background: url("../img/Arrow-right.svg");
+    left: -30px;
+    top: 50%;
+}
 
-.anims .anim:nth-child(1) {
-    background: url("../img/Got.png");
-    padding-left: 20px;
+.slick-next{
+    background: url("../img/Arrow-left.svg");
+    right: -40px ;
+    top: 50%;
+}
+
+.anim1 {
+    background: url("../img/Got.png") no-repeat;
+    padding: 20px;
     margin-top: 15px;
-    Width: 450px;
+    Width: 500px;
     Height: 700px;
 }
 
-.anims .anim:nth-child(2) {
-    background: url("../img/Falcon.png");
-    padding-left: 20px;
+.anim2 {
+    background: url("../img/Falcon.png") no-repeat;
+    padding: 20px;
     margin-top: 15px;
-    Width: 450px;
+    Width: 500px;
     Height: 700px;
 }
 
-.anims .anim:nth-child(3) {
-    background: url("../img/WandaVision.png");
-    padding-left: 20px;
+.anim3 {
+    background: url("../img/WandaVision.png") no-repeat;
+    padding: 20px;
     margin-top: 15px;
-    Width: 450px;
+    Width: 500px;
+    Height: 700px;
+}
+
+.anim4 {
+    background: url("../img/Got.png") no-repeat;
+    padding: 20px;
+    margin-top: 15px;
+    Width: 500px;
+    Height: 700px;
+}
+
+.anim5 {
+    background: url("../img/Falcon.png") no-repeat;
+    padding: 20px;
+    margin-top: 15px;
+    Width: 500px;
+    Height: 700px;
+}
+
+.anim6 {
+    background: url("../img/WandaVision.png") no-repeat;
+    padding: 20px;
+    margin-top: 15px;
+    Width: 500px;
     Height: 700px;
 }
 
 .anim__p {
-
     margin-bottom: 20px;
     padding: 10px 15px;
     display: inline-block;
@@ -303,7 +430,7 @@ body {
     line-height: 16px;
     color: #0FEFFD;
     background: rgba(29, 29, 29, 0.5);
-    border-radius: 0px 8px;
+    border-radius: 0 8px;
     margin-top: 550px;
 }
 
